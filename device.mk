@@ -405,7 +405,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     init.xiaomi_parts.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.safailnet.rc
 
 # RCS
 PRODUCT_PACKAGES += \
