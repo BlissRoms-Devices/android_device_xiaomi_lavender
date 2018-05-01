@@ -11,14 +11,14 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS := \
+	$(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
 
 # RRO configuration
 PRODUCT_ENFORCE_RRO_TARGETS := *
