@@ -128,7 +128,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
-    debug.sf.enable_hwc_vds=1 \
+    debug.sdm.support_writeback=0 \
     ro.opengles.version=196610 \
     ro.vendor.display.sensortype=2 \
     vendor.gralloc.enable_fb_ubwc=1 \
