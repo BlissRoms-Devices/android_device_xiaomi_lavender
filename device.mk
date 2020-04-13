@@ -203,6 +203,10 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
+# Gcam
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
