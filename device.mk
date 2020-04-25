@@ -524,3 +524,6 @@ PRODUCT_PACKAGES += \
 	libnl \
 	libaacwrapper \
 	libwfdaac
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
