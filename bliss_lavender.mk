@@ -32,4 +32,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender"
 
+# Device Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.bliss.maintainer=ZugengOwen
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
