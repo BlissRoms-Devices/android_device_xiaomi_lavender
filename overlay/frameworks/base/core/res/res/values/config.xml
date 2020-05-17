@@ -651,4 +651,22 @@
 	<string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 	<integer name="config_sysCPUTempMultiplier">1000</integer>
 	<integer name="config_sysBatteryTempMultiplier">10</integer>
+	
+	<!-- Button backlight -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+    <bool name="config_deviceHasVariableButtonBrightness">false</bool>
+    
+     <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)
+    -->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">100</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+    
+     <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
+    
+    
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>
