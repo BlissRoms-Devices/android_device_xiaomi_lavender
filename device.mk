@@ -524,5 +524,3 @@ PRODUCT_PACKAGES += \
 	libaacwrapper \
 	libwfdaac
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
