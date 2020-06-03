@@ -40,3 +40,4 @@ persist.dbg.ims_volte_enable=1
 persist.radio.videopause.mode=1
 persist.data.iwlan.enable=true
 persist.radio.VT_HYBRID_ENABLE=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
