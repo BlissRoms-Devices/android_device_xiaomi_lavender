@@ -41,3 +41,7 @@ persist.radio.videopause.mode=1
 persist.data.iwlan.enable=true
 persist.radio.VT_HYBRID_ENABLE=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+# Device Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.bliss.maintainer=ZugengOwen
