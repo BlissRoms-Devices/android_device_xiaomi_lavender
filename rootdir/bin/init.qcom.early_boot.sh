@@ -377,6 +377,10 @@ case "$target" in
                 setprop vendor.media.target.version 2
                 setprop vendor.gralloc.disable_ubwc 1
                 ;;
+            471)
+                #scuba APQ
+                setprop vendor.gralloc.disable_ubwc 1
+                ;;
             *)
                 sku_ver=`cat /sys/devices/platform/soc/5a00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 1 ]; then
