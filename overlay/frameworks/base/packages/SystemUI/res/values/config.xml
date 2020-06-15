@@ -34,5 +34,7 @@
 
     <!-- Doze: does this device support STATE_DOZE?  -->
 	<bool name="doze_display_state_supported">true</bool>
+
+	<string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
 </resources>
 
