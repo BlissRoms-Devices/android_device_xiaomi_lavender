@@ -15,9 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit some common Bliss  stuff
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_GAPPS_ARCH := arm64
+BLISS_BUILDTYPE=OFFICIAL
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
