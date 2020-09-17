@@ -25,7 +25,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
+    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
+
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
