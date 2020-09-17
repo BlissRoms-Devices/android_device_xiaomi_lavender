@@ -514,7 +514,3 @@ PRODUCT_PACKAGES += \
 	libnl \
 	libaacwrapper \
 	libwfdaac
-
-#FirefoxLite
-PRODUCT_PACKAGES += \
-    FirefoxLite
