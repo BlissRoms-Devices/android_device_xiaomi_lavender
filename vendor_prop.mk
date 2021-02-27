@@ -222,3 +222,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #disable dual isp sync by default
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.camera.dual.isp.sync=0
+
+# Privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.control_privapp_permissions=log
