@@ -25,11 +25,9 @@ PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
-    PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="coral-user 11 RQ2A.210405.005 7181113 release-keys"
+    PRODUCT_NAME="lavender"
 
-BUILD_FINGERPRINT :="google/coral/coral:11/RQ2A.210405.005/7181113:user/release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

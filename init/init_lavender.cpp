@@ -33,13 +33,15 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
-
+#include <stdlib.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
+
+using ::android::base::SetProperty;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -92,6 +94,13 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void vendor_load_properties()
 {
     // dalvik
@@ -102,4 +111,8 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    // fingerprint
+    property_override("ro.build.description", "lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
 }
