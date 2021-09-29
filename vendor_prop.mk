@@ -208,7 +208,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SOC
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=SDM660
 
 # Time
