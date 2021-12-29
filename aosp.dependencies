@@ -5,6 +5,12 @@
     "branch": "eleven"
   },
   {
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "remote": "pixel",
+    "branch": "twelve"
+  },
+  {
     "repository": "vendor_xiaomi_lavender",
     "target_path": "vendor/xiaomi/lavender",
     "branch": "eleven",
