@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Bliss stuff
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+BLISS_BUILDTYPE=OFFICIAL
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
